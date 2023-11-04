@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle JS</title>
+
+    <script src="js/puzzle.js"></script>
+</head>
+<body>
+    <h1>Puzzle</h1>
+    <p id="tRestante">Tiempo restante: <span id="tiempo"></span> segundos</p>
+    <script>
+        /* Declaración de variables */
+        var alto = prompt("Introduce la altura del puzzle:");
+        var ancho = prompt("Introduce el ancho del puzzle:");
+
+        document.write("Tablero escogido: " + ancho + "x" + alto);
+
+        var puzzle = new Puzzle(alto, ancho);
+        puzzle.dibujarTablero();
+    </script>
+</body>
+</html>
